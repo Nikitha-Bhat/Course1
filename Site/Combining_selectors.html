@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Combining Selectors</title>
+		<!--
+			1. All span of class big. [Element with class selector]
+			2. All span that are direct child of div. [Direct child selector]
+			3. Any p which is a chile of article. [Decendent selector]
+		-->
+		<style type="text/css">
+			span.big{
+				background-color: grey; 
+			}
+			
+			div > span{
+				color: red;
+				font-weight: bold;
+			}
+
+			article p{
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Combining Selectors</h1>
+		<p>This page is a smaple that teaches how to use combinig selectors of CSS.</p>	
+		<div>Following are three different types of selectors</div>
+		<h3>Element Selector</h3>
+		<p>Element selector is used to provide styling to some particular elements in the file.</p>
+		<h3>Class Selector</h3>
+		<div>Using <span>Class Selector</span> all the elements of the the file under the particular class could be given the same styling.</div>
+		<h3>Id Selector</h3>
+		<p>Id selector is used to provide styling to the element with the particular id value. <span class="big">This cannot be reused because multiple elements cannot share the same id value.</span></p>
+
+		<article>
+			<div>
+				<p>P tag inside div. Div inside article.</p>
+			</div>
+		</article>
+	</body>
+</html>
